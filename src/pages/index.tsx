@@ -6,7 +6,7 @@ export default function Home() {
   return (
       <>
           <div>
-            <span>{`Hello, you're logged in as ${user?.firstname} ${user?.lastname}!`}</span>
+            <span>{`Hello, you're logged in as ${user?.name}!`}</span>
           </div>
           <div>
             <a href="#" onClick={() => signOut({ redirect: true, callbackUrl: '/login' })}>

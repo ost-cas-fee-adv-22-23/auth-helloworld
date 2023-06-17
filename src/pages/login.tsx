@@ -13,11 +13,11 @@ export default function Home() {
   });
 
   return (
-        <div>
-          <button onClick={() => signIn('zitadel')}>
-            Login
-          </button>
-
+    <div>
+      <button onClick={() => signIn('zitadel', {
+              callbackUrl: '/'})}>
+        Login
+      </button>
     </div>
   );
 }
